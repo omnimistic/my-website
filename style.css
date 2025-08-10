@@ -113,6 +113,14 @@ section{
     background-color: black;
 }
 
+.homecontent {
+    padding-left: 1rem; /* or more if needed */
+    padding-right: 1rem; /* to keep symmetry */
+    box-sizing: border-box;
+}
+
+
+
 .home .homecontent h1{
     font-size: 6rem;
     font-weight: 700;
@@ -223,6 +231,20 @@ span{
     color: red;
 }
 
+
+@media (max-width: 600px) {
+    #typed-text-wrapper {
+        width: 14ch; /* narrower width for phones */
+    }
+
+    .homecontent h1 {
+        font-size: 4rem; /* smaller heading on phones */
+    }
+
+    .homecontent h3 {
+        font-size: 2.5rem; /* smaller subheading on phones */
+    }
+}
 
 
 
