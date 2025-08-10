@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="highlight">Prasurjya</a>
+    <nav>
+        <a href="index.html">home</a>
+        <a href="skills.html">skills</a>
+        <a href="projects.html">projects</a>
+        <a href="education.html">education</a>
+    </nav>
+    </header>
+    <section class="home">
+       <div class="home-img">
+        <img src="images/iluminati.jpg" alt="" class="profile_pic">
+       </div> 
+       <div class="homecontent">
+        <h1>Hi! Myself <span>Prasurjya</span></h1>
+
+        <h3>and I am a <span id="typed-text"></span><span class="cursor">|</span></h3>
+
+        <p>I’m a tech enthusiast with a passion for coding, robotics, and game development — always curious about how things work and how to make them better. With a strong interest in data science and computer science, I love building creative, challenging projects — from FPS games to mobile apps — and exploring new technologies to turn ideas into reality.</p>
+        <br>
+        <p>Currently preparing for competitive exams like JEE, I balance my studies with hands-on projects that sharpen my problem-solving skills and keep my creativity alive.</p>
+        <br>
+        <br>
+        <div><h4>My socials:</h4></div>
+        
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/prasurjya-talukdar-997652365" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/omnimistic" target="_blank" rel="noopener noreferrer"><i class="fab fab fa-github"></i></a>
+            <a href="https://omnimistic.itch.io" target="_blank" rel="noopener noreferrer"><i class="fab fab fa-itch-io"></i></a>
+            <a href="https://www.instagram.com/omnimistic/" target="_blank" rel="noopener noreferrer"><i class="fab fab fa-instagram"></i></a>
+            
+        </div>
+        <a href="mailto:prasparadise@gmail.com" class="button">Contact me</a>
+       </div>
+    </section>
+   
+
+
+
+<script>
+const phrases = ["Hobbyist Gamedev", "Programmer", "Tech Enthusiast", "Aspiring Polymath"];
+const typedText = document.getElementById("typed-text");
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typingSpeed = 100;
+const deletingSpeed = 50;
+const delayBetweenPhrases = 1500; // pause before deleting
+
+function type() {
+    const currentPhrase = phrases[phraseIndex];
+
+    if (isDeleting) {
+        charIndex--;
+        typedText.textContent = currentPhrase.substring(0, charIndex);
+    } else {
+        charIndex++;
+        typedText.textContent = currentPhrase.substring(0, charIndex);
+    }
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+        setTimeout(() => isDeleting = true, delayBetweenPhrases);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+
+    const speed = isDeleting ? deletingSpeed : typingSpeed;
+    setTimeout(type, speed);
+}
+
+type();
+</script>
+
+
+
+</body>
+</html>

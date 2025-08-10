@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Prasurjya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <style>
+    /* Hover animation for project titles */
+    h2.project-title {
+      color: red;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+    h2.project-title:hover {
+      color: #ff77ff;
+      transform: scale(1.05);
+    }
+
+    /* Hover effect for itch.io links */
+    a.itch-link {
+      color: red;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+    a.itch-link:hover {
+      color: #ff77ff;
+      text-decoration: underline;
+    }
+
+    /* Tech/tools styling */
+    .tech-list {
+      font-style: italic;
+      color: #cc6666;
+      margin-top: 0.3rem;
+      margin-bottom: 1.3rem;
+      font-size: 1.5rem;
+    }
+
+    /* Assets & Credits styling */
+    .credits {
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      color: #cc6666;
+      font-style: italic;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    .credits h3 {
+     color: red;
+     margin-bottom: 0.8rem;
+     font-weight: 700;
+     font-size: 2rem; /* reduced from larger size */
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="highlight">Prasurjya</a>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="skills.html">skills</a>
+      <a href="projects.html" class="active">projects</a>
+      <a href="education.html">education</a>
+    </nav>
+  </header>
+
+  <section
+    class="home"
+    style="flex-direction: column; gap: 3rem; padding-top: 10rem; max-width: 700px; margin: 0 auto; text-align: left;"
+  >
+    <div class="homecontent">
+      <h1>My <span>Projects</span></h1>
+      <p style="color: white; font-size: 1.8rem; margin-top: 0.5rem; margin-bottom: 2.5rem;">
+        Here are some of my favorite projects and collaborations.
+      </p>
+
+      <div style="font-size: 1.7rem; line-height: 1.6; color: white;">
+        
+        <div>
+          <h2 class="project-title">Touch the Grass <small style="color: #ff77ff; font-weight: 600;">(In Development)</small></h2>
+          <p>
+            A first-person puzzle adventure game with some combat elements, targeting both PC and Android platforms. Escape and explore a dystopian world with innovative mechanics and immersive storytelling. Available on <a href="https://omnimistic.itch.io/grass-molestor" target="_blank" rel="noopener noreferrer" class="itch-link">itch.io</a>.
+          </p>
+          <p class="tech-list">Built with: Godot, GDScript, Blender</p>
+        </div>
+
+        <div>
+          <h2 class="project-title">Glasses Style Recommendation App <small style="color: #ff7777; font-weight: 600;">(On Hold)</small></h2>
+          <p>
+            A mobile app that suggests glasses styles based on face shape, skin tone, and gender, with an AR virtual try-on feature planned.
+          </p>
+          <p class="tech-list">Built with: Flutter, Dart, ARCore (planned)</p>
+        </div>
+
+        <div>
+          <h2 class="project-title">Hiragana-X</h2>
+          <p>
+            A 3D first-person interactive game designed in collaboration with a friend to help users practice, learn, and revise the Hiragana writing script. Available on <a href="https://omnimistic.itch.io/hiragana-x" target="_blank" rel="noopener noreferrer" class="itch-link">itch.io</a>.
+          </p>
+          <p class="tech-list">Built with: Godot, GDScript, Blender</p>
+        </div>
+
+        <div>
+          <h2 class="project-title">King's Vengeance</h2>
+          <p>
+            A fun and quirky 3D parkour game made for the "Roast Me Jam" game jam, where you control a character navigating challenging obstacles. Available on <a href="https://omnimistic.itch.io/kings-vengeance" target="_blank" rel="noopener noreferrer" class="itch-link">itch.io</a>.
+          </p>
+          <p class="tech-list">Built with: Godot, GDScript, Blender</p>
+        </div>
+
+        <div>
+          <h2 class="project-title">Mango Rush</h2>
+          <p>
+            An enhanced Chrome Dino game clone featuring three playable characters, multiple collectible fruits, and unique gameplay elements where some fruits must be avoided or collected depending on the character played. Available on <a href="https://omnimistic.itch.io/mango-rush" target="_blank" rel="noopener noreferrer" class="itch-link">itch.io</a>.
+          </p>
+          <p class="tech-list">Built with: Godot, GDScript, LibreSprite</p>
+        </div>
+
+        <div>
+          <h2 class="project-title">Additional Projects</h2>
+          <p>
+            Additionally, I’ve worked on 30+ personal and experimental game projects, honing my skills across various genres and styles.
+          </p>
+        </div>
+
+        <div class="credits">
+          <h3>Assets &amp; Credits</h3>
+          <p>
+            Many projects include third-party assets (graphics, sounds, models) licensed for use and modification. Thanks to the creators for their contributions!
+          </p>
+          <p>
+            Blender and LibreSprite have been my primary tools for asset creation, alongside various freely available and allowed third-party assets.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+</body>
+</html>
